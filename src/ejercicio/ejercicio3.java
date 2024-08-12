@@ -17,7 +17,9 @@ public class ejercicio3 {
         // TODO code application logic here
         Scanner entra= new Scanner(System.in);
         int ahora= 2024;
+        String ans;
         boolean centinela=true;
+        
         do{
         System.out.println("escriba año nacido");
         int año= entra.nextInt();
@@ -28,7 +30,12 @@ public class ejercicio3 {
                 System.out.println("no puede votar");
         }
             System.out.println("quiere cerrar la aplicacion?");
-        }while(centinela=true); 
+            ans = entra.next();
+            switch (ans){
+                case "si" -> centinela=false;
+                    
+            }
+        }while(true==centinela); 
     
     }
 }
