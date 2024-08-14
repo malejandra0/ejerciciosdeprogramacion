@@ -39,7 +39,7 @@ public class ejercicio4 {
 
         for (int x = 0; x < 10; x++) {
             boolean repetido = false;
-            for (int w = 0; w < x; w++) {  // Comparamos con los números anteriores, no todos
+            for (int w = 0; w < x; w++) {  
                 if (num[x] == num[w]) {
                     repetido = true;
                     break;
